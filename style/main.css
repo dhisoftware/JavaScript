@@ -1,0 +1,56 @@
+
+/* Establecer el fondo transparente para los botones */
+.btn.editarProveedor {
+    background-color: rgba(0, 0, 0, 0); /* Fondo transparente (sin color de fondo) */
+    color: #034b99;
+    outline: none;
+    border: 0;
+    padding-right: 1;
+}
+
+.btn.eliminarProveedor{
+    background-color: rgba(0, 0, 0, 0); /* Fondo transparente (sin color de fondo) */
+    color: #770202;
+    outline: none;
+    border: 0;
+    padding: 0;
+}
+
+.btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Estilo personalizado para el botón "Agregar Proveedor" */
+.btnAgregar {
+    background-color: #5a7ca0;
+    color: #FFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+    -webkit-transition: background-color 0.6s;
+    -moz-transition: background-color 0.6s;
+    -ms-transition: background-color 0.6s;
+    -o-transition: background-color 0.6s;
+}
+  
+  /* Estilo al pasar el cursor por encima del botón */
+  .btnAgregar:hover {
+    background-color: #edf0f3; /* Cambia el color de fondo al pasar el cursor */
+  }
+
+  .btnAgregarLineaOC{
+    margin-top: 10px;
+background-color: #84a591;
+border: none;
+  }
+
+  .btnAgregarLineaOC:hover{
+    background-color: #bfcfc6;
+    color: black;
+border: none;
+  }
+
+   

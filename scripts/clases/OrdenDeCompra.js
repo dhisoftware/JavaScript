@@ -1,23 +1,20 @@
 class OrdenDeCompra {
-    constructor(proveedor, numero, tipo, fecha) {
-      this.proveedor = proveedor;
+    constructor(numero, proveedor, tipo, fecha) {
       this.numero = numero;
+      this.proveedor = proveedor;
       this.tipo = tipo;
       this.fecha = fecha;
       this.fechaRegistro = new Date().toLocaleDateString();
       this.lineasDeOrden = [];
     }
 
-    // Método para agregar una línea de orden a la orden de compra
-    agregarLineaOC(descripcion, importe, cantidad) {
-        const nuevaLineaDeOrden = new OrdenDeCompraLinea(descripcion, importe, cantidad);
-        this.lineasDeOrden.push(nuevaLineaDeOrden);
-    }
-
     calcularTotalOC() {
+        console.log(this.lineasDeOrden)
+
         let total = 0;
         for (const lineaDeOrden of this.lineasDeOrden) {
             total += lineaDeOrden.total;
+            console.log('Totale ' + lineaDeOrden.total)
         }
         return total;
     }
